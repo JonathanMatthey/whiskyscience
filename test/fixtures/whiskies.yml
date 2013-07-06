@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  country: MyString
+  region: MyString
+  ABV: 1.5
+  producer: MyString
+
+two:
+  name: MyString
+  country: MyString
+  region: MyString
+  ABV: 1.5
+  producer: MyString
