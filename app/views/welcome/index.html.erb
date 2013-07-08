@@ -1,0 +1,22 @@
+<h1>Scotch Tasting Notes</h1>
+
+<h4>Users</h4>
+<% @users.each do | user | %>
+<div class="User">
+  <%= user.name %>
+</div>
+<% end %>
+
+<h4>Whiskies</h4>
+<% @whiskies.each do | whisky | %>
+<div class="whisky">
+  <%= whisky.display_name %>
+</div>
+<% end %>
+
+<h4>Tasting Notes</h4>
+<% @notes.each do | note | %>
+<div class="notes">
+  <%= note.notes %>
+</div>
+<% end %>
