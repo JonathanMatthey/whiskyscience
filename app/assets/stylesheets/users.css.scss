@@ -1,3 +1,43 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1{
+  text-align: right;
+}
+
+.tasting-note{
+  width: 190px;
+  padding:5px;
+  margin:5px;
+  display: inline-block;
+
+  font-family:sans-serif;
+  font-size:16px;
+
+  &:hover{
+    .whisky-thumb{
+      background-color:#ddd;
+    }
+  }
+
+  .whisky-thumb{
+    -webkit-transition: all 100ms linear;
+    width:190px;
+    height:190px;
+    background-color:#eee;
+  }
+
+  .whisky-name{
+    line-height: 22px;
+    margin-top: 10px;
+    margin-left:5px;
+  }
+
+  .tasting-note-notes{
+    clear:both;
+    font-size:12px;
+    margin-top:5px;
+    margin-left:5px;
+  }
+}

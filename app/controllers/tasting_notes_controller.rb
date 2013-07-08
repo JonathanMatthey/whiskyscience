@@ -9,5 +9,6 @@ class TastingNotesController < ApplicationController
   end
 
   def show
+    @tasting_note = TastingNote.find(params[:id])
   end
 end

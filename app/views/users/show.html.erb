@@ -1,2 +1,12 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<h1>
+  <%= @user.display_name %>
+</h1>
+
+<h5>Tasting Notes</h5>
+<% @user.tasting_notes.each do | note | %>
+  <%= link_to(tasting_note_path(note.id), html_options = {class:"tasting-note"}) do %>
+    <div class="whisky-thumb"></div>
+    <div class="whisky-name"><%= note.whisky.display_name %></div>
+    <div class="tasting-note-notes"><%= note.notes %></div>
+  <% end %>
+<% end %>

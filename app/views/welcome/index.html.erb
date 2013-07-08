@@ -1,11 +1,15 @@
 <h1>Scotch Tasting Notes</h1>
 
 <h4>Users</h4>
+
 <% @users.each do | user | %>
 <div class="User">
- <%= link_to user.name, user_path(user.id) %>
+ <%= link_to user.display_name, user_path(user.id) %>
 </div>
 <% end %>
+
+<br/>
+<br/>
 
 <h4>Whiskies</h4>
 <% @whiskies.each do | whisky | %>
@@ -13,6 +17,9 @@
   <%= whisky.display_name %>
 </div>
 <% end %>
+
+<br/>
+<br/>
 
 <h4>Tasting Notes</h4>
 <% @notes.each do | note | %>

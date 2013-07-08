@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
 
   validates :email, presence: true
 
-  def name
+  def display_name
     (first_name || "") + " " + (last_name || "")
   end
 

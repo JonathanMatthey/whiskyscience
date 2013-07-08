@@ -1,2 +1,41 @@
-<h1>TastingNotes#show</h1>
-<p>Find me in app/views/tasting_notes/show.html.erb</p>
+<h1>TastingNote</h1>
+
+<h5>Date</h5>
+
+<%= @tasting_note.date.to_s %>
+
+<br/>
+<br/>
+
+<h5>Notes</h5>
+
+<%= @tasting_note.notes %>
+
+<br/>
+<br/>
+
+<h5>Rating</h5>
+
+<%= @tasting_note.rating %>
+
+<br/>
+<br/>
+
+<h5>FlavourWheel</h5>
+
+linger: <%= @tasting_note.flavour_wheel.linger %><br/>
+heat_proof: <%= @tasting_note.flavour_wheel.heat_proof %><br/>
+dark_fruit: <%= @tasting_note.flavour_wheel.dark_fruit %><br/>
+citrus_punch: <%= @tasting_note.flavour_wheel.citrus_punch %><br/>
+floral: <%= @tasting_note.flavour_wheel.floral %><br/>
+spicy: <%= @tasting_note.flavour_wheel.spicy %><br/>
+herbal: <%= @tasting_note.flavour_wheel.herbal %><br/>
+malty: <%= @tasting_note.flavour_wheel.malty %><br/>
+toffee: <%= @tasting_note.flavour_wheel.toffee %><br/>
+woody: <%= @tasting_note.flavour_wheel.woody %><br/>
+tannic: <%= @tasting_note.flavour_wheel.tannic %><br/>
+char: <%= @tasting_note.flavour_wheel.char %><br/>
+sweet: <%= @tasting_note.flavour_wheel.sweet %><br/>
+body: <%= @tasting_note.flavour_wheel.body %><br/>
+legs: <%= @tasting_note.flavour_wheel.legs %><br/>
+balance: <%= @tasting_note.flavour_wheel.balance %><br/>
