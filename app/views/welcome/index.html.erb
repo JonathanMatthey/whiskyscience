@@ -3,7 +3,7 @@
 <h4>Users</h4>
 <% @users.each do | user | %>
 <div class="User">
-  <%= user.name %>
+ <%= link_to user.name, user_path(user.id) %>
 </div>
 <% end %>
 

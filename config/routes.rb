@@ -14,6 +14,7 @@ Whiskyscience::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
     resources :tasting_notes
+    resources :users
 
   # Example resource route with options:
   #   resources :products do
