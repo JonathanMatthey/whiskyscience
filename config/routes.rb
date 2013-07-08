@@ -1,4 +1,12 @@
 Whiskyscience::Application.routes.draw do
+  get "tasting_notes/new"
+  get "tasting_notes/index"
+  get "tasting_notes/edit"
+  get "tasting_notes/show"
+  get "users/new"
+  get "users/index"
+  get "users/edit"
+  get "users/show"
   get "welcome/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
